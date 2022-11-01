@@ -341,10 +341,16 @@ img {
   margin: 0;
   padding: 11px 12px 11px 42px;
   font: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  outline-color: transparent;
+  cursor: pointer;
 
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
   margin-top: 28px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label {
@@ -361,8 +367,19 @@ img {
 
 .form-icon {
   position: absolute;
+  fill: var(--primary-black-color);
   top: 12px;
   left: 12px;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:hover .form-icon,
+.form-field:hover .form-input,
+.form-input:focus ~ .form-icon,
+.form-input:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .form-textarea {
@@ -373,10 +390,18 @@ img {
   padding: 12px 16px;
   font: inherit;
   resize: none;
+  outline-color: transparent;
+  cursor: pointer;
 
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
   margin-top: 28px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea:hover,
+.form-textarea:focus {
+  border-color: var(--accent-color);
 }
 
 .form-textarea::placeholder {
