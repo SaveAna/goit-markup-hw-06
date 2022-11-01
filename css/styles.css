@@ -18,6 +18,7 @@
   --project-border-color: #eeeeee;
   --form-border-color: #21212133;
   --placeholder-color: #75757580;
+  --subscribe-border-color: #ffffff4d;
 
   --card-gap: 30px;
 }
@@ -488,10 +489,6 @@ img {
   background-color: var(--active-btn-color);
 }
 
-/* <symbol id="icon-check" viewBox="1 -3 50 50">
-      <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
-    </symbol> */
-
 /* features-section */
 
 .feature-title {
@@ -779,6 +776,121 @@ img {
 .footer-social-link:focus {
   background-color: var(--accent-color);
 }
+
+/* ------------footer form--------------- */
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  transform: translateY(48px);
+}
+
+.subscribe-form-field {
+  position: relative;
+}
+
+.subscribe-form-input {
+  display: block;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  width: 358px;
+  height: 50px;
+  margin: 0;
+  padding: 15px 16px;
+
+  outline-color: transparent;
+  cursor: pointer;
+
+  border: 1px solid var(--subscribe-border-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-form-input:hover,
+.subscribe-form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.subscribe-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+}
+
+.subscribe-form-label {
+  position: absolute;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+
+  top: 0;
+  left: 0;
+  transform: translateY(calc(-100% - 20px));
+}
+
+/* -------------subscrive-btn-------------- */
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-icon {
+  fill: var(--primary-white-color);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background-color: var(--active-btn-color);
+}
+
+/* .send-btn {
+  width: 200px;
+  height: 50px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background-color: var(--active-btn-color);
+} */
 
 /* portfolio-section 
 portfolio filter-buttons */
