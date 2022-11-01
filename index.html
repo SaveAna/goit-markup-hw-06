@@ -59,7 +59,7 @@
               </svg>
             </button>
             <h2 class="modal-title">Leave your information and we'll call you back</h2>
-            <form class="form">
+            <form class="form js-speaker-form">
               <div class="form-field">
                 <input type="text" class="form-input" name="name" placeholder=" ">
                 <label for="name" class="form-label">Name</label>
@@ -82,12 +82,18 @@
                 </svg>
               </div>
               <div class="form-field">
-                <textarea class="form-textarea" name="comment" rows="10" placeholder="Enter the text"></textarea>
+                <textarea class="form-textarea" name="comment" rows="10" maxlength="130"
+                  placeholder="Enter the text"></textarea>
                 <label for="comment" class="form-label">Comments</label>
               </div>
-              <label class="agreement" for="agreement">
-                <input type="checkbox" name="agreement">
-                I agree with the letter and accept the <a class="agree-link" href="#">Terms and Conditions</a>
+              <label class="agreement">
+                <input class="checkbox" type="checkbox" name="agreement" value="agree">
+                <svg class="icon-check" width="16" height="15">
+                  <use class="use" href="./images/icons.svg#icon-check"></use>
+                </svg>
+                <div>
+                  I agree with the letter and accept the <a class="agree-link" href="#">Terms and
+                    Conditions</a></div>
               </label>
               <button class="send-btn" type="submit">Send</button>
             </form>
@@ -431,6 +437,7 @@
     </div>
   </footer>
   <script src="./js/modal.js"></script>
+  <script src="./js/check.js"></script>
 </body>
 
 </html>
