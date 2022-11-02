@@ -801,14 +801,9 @@ img {
 
 .subscribe-form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 12px;
   margin-left: 93px;
-  transform: translateY(48px);
-}
-
-.subscribe-form-field {
-  position: relative;
 }
 
 .subscribe-form-input {
@@ -846,8 +841,7 @@ img {
 }
 
 .subscribe-form-label {
-  position: absolute;
-
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -855,9 +849,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
 
-  top: 0;
-  left: 0;
-  transform: translateY(calc(-100% - 20px));
+  margin-bottom: 20px;
 }
 
 /* -------------subscrive-btn-------------- */
