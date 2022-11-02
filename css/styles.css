@@ -653,7 +653,7 @@ img {
 .teammates .card {
   display: flex;
   gap: var(--card-gap);
-  flex-basis: calc((100%-3 * var(--card-gap)) / 4);
+  flex-basis: calc((100% - 3 * var(--card-gap)) / 4);
   margin-top: 50px;
 }
 
