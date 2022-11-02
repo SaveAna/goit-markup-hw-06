@@ -330,22 +330,21 @@ img {
 }
 
 .modal-title {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-black-color);
+  margin-bottom: 12px;
 }
 
 /* -------------form----------------- */
 
-.form {
-  margin-top: 30px;
-}
-
 .form-field {
   position: relative;
+  text-align: left;
   margin-bottom: 10px;
 }
 
@@ -364,28 +363,28 @@ img {
 
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
-  margin-top: 28px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label {
-  position: absolute;
+  display: block;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--basic-text-color);
+  margin-bottom: 4px;
+}
 
-  top: 0;
-  left: 0;
-  transform: translateY(calc(-100% - 4px));
+.comment-field {
+  margin-bottom: 20px;
 }
 
 .form-icon {
   position: absolute;
   fill: var(--primary-black-color);
-  top: 12px;
+  top: 50%;
   left: 12px;
   cursor: pointer;
 
@@ -407,13 +406,16 @@ img {
   height: 120px;
   margin: 0;
   padding: 12px 16px;
+
   font: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
   resize: none;
   cursor: pointer;
 
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
-  margin-top: 28px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -477,7 +479,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
-  margin-top: 20px;
 }
 
 .agree-link {
